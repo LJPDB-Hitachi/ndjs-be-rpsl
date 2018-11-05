@@ -6,7 +6,11 @@ var Schema = mongoose.Schema;
 var DataMovementSchema = new Schema({
   source: {
     type: String,
-    required: 'Please make sure this item has source address-folder from Azure VM'
+    required: 'Please make sure this item has SOURCE address-folder from Azure VM'
+  },
+  filename: {
+    type: String,
+    required: 'Please make sure this item has NAME ID from Azure VM'
   },
   Created_date: {
     type: Date,
@@ -14,7 +18,7 @@ var DataMovementSchema = new Schema({
   },
   destination: {
     type:String,
-    required: "Please make sure this item has destination blob folder"
+    required: "Please make sure this item has DESTINATION blob folder"
   },
   status: {
     type: [{

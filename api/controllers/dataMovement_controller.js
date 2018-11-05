@@ -1,5 +1,6 @@
 'use strict';
 
+// Try not to use MLAB but directly azure cosmos DB to store file and status. Front will be filled just with info passed from Azure Functions
 
 var mongoose = require('mongoose'),
   Item = mongoose.model('DataMovementSchema');

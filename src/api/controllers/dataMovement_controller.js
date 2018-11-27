@@ -1,5 +1,4 @@
 'use strict';
-
 // Try not to use MLAB but directly azure cosmos DB to store file and status. Front will be filled just with info passed from Azure Functions
 
 //var mongoose = require('mongoose'),
@@ -27,8 +26,12 @@ exports.create_item_table = function(req, res) {
   });
   */
   //req.json([{"filename":"43kd34.zip", "status":"uploading", "address":"10.24.23.01"},{"filename":"43kd34.zip", "status":"uploading", "address":"10.24.23.01"}]);
-  console.log("getting the info..."+JSON.stringify(req));
-  res.json({"status":"OK"})
+  console.log("getting the info..."+JSON.stringify(req.body.response));
+  var io = req.app.get('io')
+  
+  io.emit('updateIn', req.body.response)
+ // res.json({"status":"OK"});
+  res.sendStatus(200);
 };
 
 

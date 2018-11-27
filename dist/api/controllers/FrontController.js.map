@@ -1,0 +1,1 @@
+{"version":3,"file":"FrontController.js","sourceRoot":"","sources":["../../../src/api/controllers/FrontController.ts"],"names":[],"mappings":";;AAEA,MAAa,eAAe;IACnB,MAAM,CAAC,GAAY,EAAE,GAAa;QACvC,GAAG,CAAC,MAAM,CAAC,GAAG,CAAC,CAAC,IAAI,CAAC;YACnB,OAAO,EAAE,0BAA0B;SACpC,CAAC,CAAC;IACL,CAAC;CACF;AAND,0CAMC;AAEY,QAAA,eAAe,GAAG,IAAI,eAAe,EAAE,CAAC"}
